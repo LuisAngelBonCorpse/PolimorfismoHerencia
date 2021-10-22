@@ -1,6 +1,6 @@
 package com.generation.animales;
 
-public abstract class Animal { //clase abstracta debe tener al menos un metodo abstracto, no puede heredar
+public abstract class Animal { //clase abstracta debe tener al menos un metodo abstracto, no puede heredar mas de una de estas como cualquier clase, y no se puede instanciar
     protected String nombre;
     protected int edad;
 
