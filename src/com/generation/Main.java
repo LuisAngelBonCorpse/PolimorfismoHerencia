@@ -1,10 +1,8 @@
 package com.generation;
 
-import com.generation.animales.Animal;
-import com.generation.animales.Ave;
-import com.generation.animales.Perro;
 import com.generation.didi.ConductorDidiSpecial;
 import com.generation.didi.DidiDriver;
+import com.sun.xml.internal.bind.v2.runtime.output.SAXOutput;
 
 public class Main {
 
@@ -19,11 +17,16 @@ public class Main {
                 ConductorDidiSpecial
 
         */
-        DidiDriver conductor1 = new DidiDriver("Juan Manuel", "Sentra","BU8701");
+        DidiDriver conductor1 = new DidiDriver("Juan Manuel", "Versa","BU8701");
         ConductorDidiSpecial conductor2 = new ConductorDidiSpecial("Brayan Perez", "Enzo","M3L4P3");
 
-        System.out.println("El precio en didi normal es: $" + conductor1.calculatePrice(6));
-        System.out.println("El precio en didi especial es: $" + conductor2.calculatePrice(6));
+
+        System.out.println("Por Kilometro:");
+        System.out.println("El precio en didi normal es: $" + conductor1.calculatePriceDistance(6));
+        System.out.println("El precio en didi especial es: $" + conductor2.calculatePriceDistance(6));
+        System.out.println("\nPor minuto:");
+        System.out.println("El precio en didi normal es: $" + conductor1.calculatePriceTime(40));
+        System.out.println("El precio en didi especial es: $" + conductor2.calculatePriceDistance(15));
 
 
 	/*

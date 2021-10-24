@@ -75,7 +75,11 @@ public class DidiDriver {
         this.currentMonthSalary = currentMonthSalary;
     }
 
-    public double calculatePrice(double km) {
+    public double calculatePriceDistance(double km) {
         return Math.max(ratePerKm*km,minimum);
+    }
+
+    public double calculatePriceTime(int minute) {
+        return Math.max(ratePerMinute*minute,minimum);
     }
 }
